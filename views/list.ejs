@@ -1,0 +1,25 @@
+<h1 class="display-4">Post-Its</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% postIts.forEach(function(postit){ %>
+            <tr>
+                <td>
+                    <%= postit.id %>
+                </td>
+                <td>
+                    <%= postit.title %>
+                </td>
+                <td></td>
+            </tr>
+            <% }) %>
+    </tbody>
+
+</table>
